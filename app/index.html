@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="comcompodOnTheFringeApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <header class="header">
+        <div class="container">
+            <h1><a href="#/">ComComPod at the Fringe</a></h1>
+        </div>
+    </header>
+    <div class="container">
+        <div ng-view="">
+            <!--  -->
+            <!-- Straight up taken from the last one for demo purpose -->
+            <!--  -->
+            <!--  -->
+            <ul class="list">
+                <!-- ngRepeat: show in shows | filter:searchText | orderBy:'time' -->
+                <li ng-repeat="show in shows | filter:searchText | orderBy:'time'" class="ng-scope"> <a href="https://tickets.edfringe.com/whats-on/theatre/fully-committed-starring-marcus-brigstocke" target="new"><h3 class="show-title ng-binding">Fully Committed Starring Marcus Brigstocke </h3></a> <a href="https://tickets.edfringe.com/whats-on/theatre/fully-committed-starring-marcus-brigstocke" target="new"><strong>Details</strong></a> • <a href="https://soundcloud.com/stu-goldsmith/ccp-ep-63-marcus-brigstocke" target="new"><strong>Podcast</strong></a> • Show starts at <strong class="ng-binding">14:00</strong> </li>
+                <!-- end ngRepeat: show in shows | filter:searchText | orderBy:'time' -->
+                <li ng-repeat="show in shows | filter:searchText | orderBy:'time'" class="ng-scope"> <a href="https://tickets.edfringe.com/whats-on/carl-donnelly-and-chris-martin-comedy-podcast-live" target="new"><h3 class="show-title ng-binding">Carl Donnelly and Chris Martin Comedy Podcast: Live! </h3></a> <a href="https://tickets.edfringe.com/whats-on/carl-donnelly-and-chris-martin-comedy-podcast-live" target="new"><strong>Details</strong></a> • <a href="https://soundcloud.com/stu-goldsmith/ccp-ep-32-carl-donnelly" target="new"><strong>Podcast</strong></a> • Show starts at <strong class="ng-binding">14:45</strong> </li>
+                <!-- end ngRepeat: show in shows | filter:searchText | orderBy:'time' -->
+                <li ng-repeat="show in shows | filter:searchText | orderBy:'time'" class="ng-scope"> <a href="https://tickets.edfringe.com/whats-on/nish-kumar-long-word-long-word-blah-blah-blah-i-m-so-clever" target="new"><h3 class="show-title ng-binding">Nish Kumar: Long Word... Long Word... Blah Blah Blah... I'm so Clever </h3></a> <a href="https://tickets.edfringe.com/whats-on/nish-kumar-long-word-long-word-blah-blah-blah-i-m-so-clever" target="new"><strong>Details</strong></a> • <a href="https://soundcloud.com/stu-goldsmith/ccp101-nish-kumar" target="new"><strong>Podcast</strong></a> • Show starts at <strong class="ng-binding">19:15</strong> </li>
+                <!-- end ngRepeat: show in shows | filter:searchText | orderBy:'time' -->
+                <li ng-repeat="show in shows | filter:searchText | orderBy:'time'" class="ng-scope"> <a href="https://tickets.edfringe.com/whats-on/comedy-gala-2015-in-aid-of-waverley-care-feat-adam-hills-marcus-brigstocke" target="new"><h3 class="show-title ng-binding">Comedy Gala 2015: In Aid of Waverley Care feat. Adam Hills &amp; Marcus Brigstocke </h3></a> <a href="https://tickets.edfringe.com/whats-on/comedy-gala-2015-in-aid-of-waverley-care-feat-adam-hills-marcus-brigstocke" target="new"><strong>Details</strong></a> • <a href="https://soundcloud.com/stu-goldsmith/ccp-ep-63-marcus-brigstocke" target="new"><strong>Podcast</strong></a> • Show starts at <strong class="ng-binding">19:30</strong> </li>
+                <!-- end ngRepeat: show in shows | filter:searchText | orderBy:'time' -->
+                <li ng-repeat="show in shows | filter:searchText | orderBy:'time'" class="ng-scope"> <a href="https://tickets.edfringe.com/whats-on/john-hastings-marked-from-the-start" target="new"><h3 class="show-title ng-binding">John Hastings: Marked from the Start </h3></a> <a href="https://tickets.edfringe.com/whats-on/john-hastings-marked-from-the-start" target="new"><strong>Details</strong></a> • <a href="https://soundcloud.com/stu-goldsmith/ccp-ep-87-john-hastings" target="new"><strong>Podcast</strong></a> • Show starts at <strong class="ng-binding">21:40</strong> </li>
+                <!-- end ngRepeat: show in shows | filter:searchText | orderBy:'time' -->
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="https://twitter.com/superallan/" target="new">@superallan</a> + <a href="https://twitter.com/mcgivernsa" target="new">@mcgivernsa</a> completely without permission for <a href="https://twitter.com/ComComPod" target="new">@ComComPod</a></p>
+        </div>
+    </footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

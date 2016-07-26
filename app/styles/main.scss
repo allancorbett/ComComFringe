@@ -1,0 +1,64 @@
+// bower:scss
+// endbower
+// Imports
+@import "color";
+// @import "layout";
+// Fonts
+@import 'https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,700';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $yellow;
+    color: $black;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1;
+}
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+
+.container {
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 1em;
+}
+header {
+    color: $cream;
+    background-color: rgba($cream, 0.3);
+    box-shadow: 0 3px 0 rgba($cream, 0.4);
+    h1 {
+        font-weight: 100;
+    }
+    a {
+        color: $cream;
+        &:hover {
+            box-shadow: 0 3px 0 $cream;
+        }
+    }
+}
+ul {
+    list-style: none;
+    margin: 0;
+    li {
+
+    }
+}
+footer {
+    margin-top: 1em;
+    // padding: 2em;
+    box-shadow: 0 -3px 0 rgba($cream, 0.4);
+    background-color: rgba($cream, 0.3);
+    a {
+        color: $cream;
+        border-bottom: 1px dotted $cream;
+        &:hover {
+            border-bottom: 1px solid $cream;
+        }
+    }
+}
