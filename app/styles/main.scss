@@ -1,11 +1,5 @@
-// bower:scss
-// endbower
-// Imports
 @import "color";
-// @import "layout";
-// Fonts
 @import 'https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,700';
-
 html,
 body {
     padding: 0;
@@ -15,12 +9,12 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     font-size: 1em;
-    line-height: 1;
+    line-height: 1.4;
 }
+
 body {
     display: flex;
     flex-direction: column;
-    // flex: 1 0 auto;
     min-height: 100vh;
     text-shadow: 0 -1px 1px rgba($cream, 0.6);
     header,
@@ -29,37 +23,49 @@ body {
     }
     .container {
         flex: 1 0 100%;
-        width: 100%;
+        padding: 0;
     }
 }
+
 a {
     text-decoration: none;
     color: $black;
 }
+
 h3 {
     font-size: 1.4em;
-    line-height: 2;
+    line-height: 1.2;
     font-weight: 700;
     margin-bottom: .7em;
 }
+
 .search {
-    outline: 0px;
-    border: 0;
-    box-shadow: 0 2px 0 rgba($cream, 0.4);
-    width: calc(100% - 4em);
-    font-size: 1.2em;
-    padding: 2em;
-    // background-color: transparent;
-    background-color: rgba($cream, 0.05);
-    &:hover, 
+    box-shadow: 0 2px 0 rgba($black, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    .search-input {
+        width: calc(100% - 2em);
+        font-size: 1.2em;
+        padding: 1em;
+        outline: 0px;
+        border: 0;
+        background-color: rgba($cream, 0.99);
+        z-index: 100;
+        text-align: center;
+    }
+    &:after {}
+    &:hover,
     &:focus,
     &:active {
-        background-color: rgba($cream, 0.2);
+        background-color: rgba($cream, 1);
     }
 }
+
 ul {
     list-style: none;
-    margin: 0;
+    margin: 5em 0 0 0;
     padding: 0;
     li {
         padding-bottom: 1em;
@@ -69,17 +75,9 @@ ul {
 }
 
 .container {
-    max-width: 80em;
+    max-width: 80ch;
     margin: 0 auto;
-    padding: 1em;
-}
-header {
-    color: $cream;
-    background-color: rgba($cream, 0.3);
-    box-shadow: 0 3px 0 rgba($cream, 0.4);
-    h1 {
-        font-weight: 100;
-    }
+    width: calc(100% - 1em);
 }
 
 footer {

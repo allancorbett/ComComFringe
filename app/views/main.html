@@ -1,4 +1,7 @@
-<input class="search" ng-model="searchText" placeholder="Search shows">
+<div class="search">
+    <input class="search-input" ng-model="searchText" placeholder="Search shows" autofocus="autofocus">
+    <div class="search-blur"></div>
+</div>
 <ul class="list">
     <li ng-repeat="show in main.shows | filter:searchText | orderBy:'times'" class="ng-scope">
         <a href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank">
