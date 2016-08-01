@@ -204,14 +204,6 @@ angular.module('comcompodOnTheFringeApp')
         "podcast_title": "CCP112 - Liz Miele"
       },
       {
-        "name": "Brendon Burns and Colt Cabana Do Comedy and Commentary to Bad Wrestling Matches!",
-        "group_name": "Brendon Burns and Colt Cabana / United Talent Agency",
-        "times": "22:45",
-        "event_url": "whats-on/brendon-burns-and-colt-cabana-do-comedy-and-commentary-to-bad-wrestling-matches",
-        "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp111-brendon-burns",
-        "podcast_title": "CCP111 - Brendon Burns"
-      },
-      {
         "name": "Lou Sanders: What's That Lady Doing?",
         "group_name": "Berk's Nest and the Pleasance",
         "times": "20:10",
@@ -368,14 +360,6 @@ angular.module('comcompodOnTheFringeApp')
         "group_name": "The Pleasance and Susan Calman",
         "times": "18:20",
         "event_url": "whats-on/susan-calman-the-calman-before-the-storm",
-        "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-60-susan-calman-live-1",
-        "podcast_title": "CCP Ep 60 - Susan Calman (Live)"
-      },
-      {
-        "name": "Susan Calman: The Calman Before the Storm",
-        "group_name": "The Pleasance and Susan Calman",
-        "times": "18:20",
-        "event_url": "whats-on/susan-calman-the-calman-before-the-storm",
         "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-60-susan-calman-live",
         "podcast_title": "CCP Ep 60 - Susan Calman (Live)"
       },
@@ -518,7 +502,7 @@ angular.module('comcompodOnTheFringeApp')
       {
         "name": "Rob Deering's Beat This",
         "group_name": "Rob Deering",
-        "times": "00:00",
+        "times": "23:59",
         "event_url": "whats-on/rob-deering-s-beat-this",
         "podcast_url": "https://soundcloud.com/stu-goldsmith/the-comedians-comedian-podcast",
         "podcast_title": "CCP Ep 1 - Rob Deering"

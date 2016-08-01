@@ -17,11 +17,56 @@ body {
     font-size: 1em;
     line-height: 1;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    // flex: 1 0 auto;
+    min-height: 100vh;
+    text-shadow: 0 -1px 1px rgba($cream, 0.6);
+    header,
+    footer {
+        flex: 0 0 auto;
+    }
+    .container {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+}
 a {
     text-decoration: none;
     color: $black;
 }
-
+h3 {
+    font-size: 1.4em;
+    line-height: 2;
+    font-weight: 700;
+    margin-bottom: .7em;
+}
+.search {
+    outline: 0px;
+    border: 0;
+    box-shadow: 0 2px 0 rgba($cream, 0.4);
+    width: calc(100% - 4em);
+    font-size: 1.2em;
+    padding: 2em;
+    // background-color: transparent;
+    background-color: rgba($cream, 0.05);
+    &:hover, 
+    &:focus,
+    &:active {
+        background-color: rgba($cream, 0.2);
+    }
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        padding-bottom: 1em;
+        box-shadow: 0 2px 0 rgba($cream, 0.4);
+        width: 100%;
+    }
+}
 
 .container {
     max-width: 80em;
@@ -35,27 +80,13 @@ header {
     h1 {
         font-weight: 100;
     }
-    a {
-        color: $cream;
-        &:hover {
-            box-shadow: 0 3px 0 $cream;
-        }
-    }
 }
-ul {
-    list-style: none;
-    margin: 0;
-    li {
 
-    }
-}
 footer {
     margin-top: 1em;
-    // padding: 2em;
     box-shadow: 0 -3px 0 rgba($cream, 0.4);
     background-color: rgba($cream, 0.3);
     a {
-        color: $cream;
         border-bottom: 1px dotted $cream;
         &:hover {
             border-bottom: 1px solid $cream;
