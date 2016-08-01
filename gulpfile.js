@@ -175,7 +175,7 @@ gulp.task('clean:dist', function (cb) {
   rimraf(yeoman.dist, cb);
 });
 
-gulp.task('client:build', ['bower', 'html', 'styles'], function () {
+gulp.task('client:build', ['bower', 'html', 'styles', 'CNAME'], function () {
   var jsFilter = $.filter('**/*.js');
   var cssFilter = $.filter('**/*.css');
 
@@ -194,6 +194,11 @@ gulp.task('client:build', ['bower', 'html', 'styles'], function () {
 gulp.task('html', function () {
   return gulp.src(yeoman.app + '/views/**/*')
     .pipe(gulp.dest(yeoman.dist + '/views'));
+});
+
+gulp.task('CNAME', function () {
+  return gulp.src(yeoman.app + '/CNAME')
+    .pipe(gulp.dest(yeoman.dist + ''));
 });
 
 gulp.task('images', function () {
