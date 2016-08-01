@@ -45,27 +45,30 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
+    background-color: $cream;
     .search-input {
         width: calc(100% - 2em);
         font-size: 1.2em;
         padding: 1em;
         outline: 0px;
         border: 0;
-        background-color: rgba($cream, 0.99);
+        border-radius: 0;
+        background-color: $cream;
         z-index: 100;
-        text-align: center;
+        top: 0;
+
     }
     &:after {}
     &:hover,
     &:focus,
     &:active {
-        background-color: rgba($cream, 1);
+        background-color: $cream;
     }
 }
 
 ul {
     list-style: none;
-    margin: 5em 0 0 0;
+    margin: 6em 0 0 0;
     padding: 0;
     li {
         padding-bottom: 1em;
