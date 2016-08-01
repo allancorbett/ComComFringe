@@ -12,6 +12,12 @@ angular.module('comcompodOnTheFringeApp')
 
     this.shows = [
       {
+        "name": "Stuart Goldsmith: Compared To What",
+        "times": "15.45",
+        "event_url": "/whats-on/stuart-goldsmith-compared-to-what",
+        "podcast_url": "https://soundcloud.com/stu-goldsmith/"
+      },
+      {
         "name": "Wendy Wason: Tiny Me",
         "group_name": "Bound & Gagged Comedy in association with Vivienne Clore",
         "times": "18:45",
