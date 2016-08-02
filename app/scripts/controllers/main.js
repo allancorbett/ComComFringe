@@ -13,7 +13,7 @@ angular.module('comcompodOnTheFringeApp')
     this.shows = [
       {
         "name": "Stuart Goldsmith: Compared To What",
-        "times": "15.45",
+        "times": "15:45",
         "event_url": "/whats-on/stuart-goldsmith-compared-to-what",
         "podcast_url": "https://soundcloud.com/stu-goldsmith/"
       },
