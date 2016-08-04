@@ -512,6 +512,23 @@ angular.module('comcompodOnTheFringeApp')
         "event_url": "whats-on/rob-deering-s-beat-this",
         "podcast_url": "https://soundcloud.com/stu-goldsmith/the-comedians-comedian-podcast",
         "podcast_title": "CCP Ep 1 - Rob Deering"
+      },
+      {
+        "name": "Alexis Dubus Verses The World",
+        "group_name": "Alexis Dubus",
+        "times": "17:15",
+        "event_url": "whats-on/alexis-dubus-verses-the-world",
+        "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-48-marcel-lucont-and",
+        "podcast_title": "CCP Ep 48 - Marcel Lucont and Alexis Dubus"
+      }
+      ,
+      {
+        "name": "Alexis Dubus – A R#ddy Brief History of Swearing",
+        "group_name": "Alexis Dubus",
+        "times": "20:45",
+        "event_url": "whats-on/alexis-dubus-a-r-ddy-brief-history-of-swearing",
+        "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-48-marcel-lucont-and",
+        "podcast_title": "CCP Ep 48 - Marcel Lucont and Alexis Dubus"
       }
     ];
 
