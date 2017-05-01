@@ -39,9 +39,9 @@ def clean_title(title)
 end
 
 ccp['collection'].each do |episode|
-  next unless episode['track']
+  next unless track = episode['track']
 
-  comedian = clean_title(episode['track']['title'])
+  comedian = clean_title(track['title'])
 
   match = fringe['response']['docs'].find do |show|
     show['group_name'].include?(comedian) || show['name'].include?(comedian)
@@ -50,8 +50,8 @@ ccp['collection'].each do |episode|
   if match
     event_url = match['event_url'].split('/')
 
-    matches << match.merge('podcast_url' => episode['permalink_url'],
-                           'podcast_title' => episode['title'],
+    matches << match.merge('podcast_url' => track['permalink_url'],
+                           'podcast_title' => track['title'],
                            'event_url' => "#{event_url.first}/#{event_url.last}")
   end
 end
