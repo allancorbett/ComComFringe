@@ -13,16 +13,14 @@ Running `gulp test` will run the unit tests with karma.
 
 ## Building
 
-First, gather the data. This may change year-to-year; it worked for 2016:
+First, gather the data. This may change year-to-year; it worked for 2017:
 
 ```shell
 # Use the Fringe's solr API to get shows with a limited set of fields
 $ curl -s 'https://tickets.edfringe.com/solr/select?fl=name,group_name,times,event_url&q=*%3A*&wt=json&rows=3580' > fringe-data.json
 
-# Soundcloud seems to enforce pagination, so get two pages and combine
-$ curl -s 'https://api-v2.soundcloud.com/users/6071615/tracks?representation=&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&limit=200&offset=0&linked_partitioning=1&app_version=1469103556' > ccp-data.json
-$ curl -s 'https://api-v2.soundcloud.com/users/6071615/tracks?representation=&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&limit=200&offset=98210633&linked_partitioning=1&app_version=1469103556' > ccp-data-2.json
-$ jq '.[0].collection + .[1].collection' -s ccp-data.json ccp-data-2.json > ccp-data-combined.json
+# Get the list of podcasts from Soundcloud
+$ curl -s 'https://api-v2.soundcloud.com/stream/users/6071615?limit=200&client_id=2t9loNQH90kzJcsFCODdigxfp325aq4z&app_version=1493303817' > ccp-data.json
 ```
 
 Then, search for matching shows and create a new JSON array:
@@ -31,7 +29,7 @@ Then, search for matching shows and create a new JSON array:
 require 'json'
 
 fringe = JSON.parse(open('fringe-data.json').read)
-ccp = JSON.parse(open('ccp-data-combined.json').read)
+ccp = JSON.parse(open('ccp-data.json').read)
 matches = []
 
 def clean_title(title)
@@ -40,8 +38,10 @@ def clean_title(title)
   match ? match[1] : title
 end
 
-ccp.each do |episode|
-  comedian = clean_title(episode['title'])
+ccp['collection'].each do |episode|
+  next unless episode['track']
+
+  comedian = clean_title(episode['track']['title'])
 
   match = fringe['response']['docs'].find do |show|
     show['group_name'].include?(comedian) || show['name'].include?(comedian)
