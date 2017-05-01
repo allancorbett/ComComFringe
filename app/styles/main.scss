@@ -1,13 +1,14 @@
 @import "color";
-@import 'https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,700';
-html,
-body {
+@import url( 'https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto+Mono:300,700');
+
+body,
+html {
     padding: 0;
     margin: 0;
     background-color: $yellow;
     color: $black;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -17,8 +18,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-shadow: 0 -1px 1px rgba($cream, 0.6);
-    header,
-    footer {
+    footer,
+    header {
         flex: 0 0 auto;
     }
     .container {
@@ -31,12 +32,21 @@ a {
     text-decoration: none;
     color: $black;
 }
+strong {
+    font-weight: 700;
+}
 
+p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
 h3 {
     font-size: 1.4em;
     line-height: 1.2;
     font-weight: 700;
     margin-bottom: .7em;
+    margin-top: 0;
+    font-family: "Bungee Inline", sans-serif;
 }
 
 .search {
@@ -50,7 +60,7 @@ h3 {
         width: calc(100% - 2em);
         font-size: 1.2em;
         padding: 1em;
-        outline: 0px;
+        outline: 0;
         border: 0;
         border-radius: 0;
         background-color: $cream;
@@ -58,33 +68,46 @@ h3 {
         top: 0;
 
     }
-    &:after {}
-    &:hover,
+    &:active,
     &:focus,
-    &:active {
+    &:hover {
         background-color: $cream;
     }
 }
 
 ul {
     list-style: none;
-    margin: 6em 0 0 0;
+    margin: 6em 0 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-row: 1fr;
+    grid-gap: 5vmin;
+    @media screen and (min-width: 560px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 720px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 960px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
     li {
-        padding-bottom: 1em;
+        padding-bottom: 0;
         box-shadow: 0 2px 0 rgba($cream, 0.4);
         width: 100%;
     }
 }
 
 .container {
-    max-width: 80ch;
+    max-width: calc(100vw - 3em);
     margin: 0 auto;
-    width: calc(100% - 1em);
 }
 
 footer {
-    margin-top: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    font-size: .8em;
     box-shadow: 0 -3px 0 rgba($cream, 0.4);
     background-color: rgba($cream, 0.3);
     a {

@@ -3,11 +3,11 @@
     <div class="search-blur"></div>
 </div>
 <ul class="list">
-    <li ng-repeat="show in main.shows | filter:searchText | orderBy:'times'" class="ng-scope">
-        <a href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank">
+    <li ng-repeat="show in main.newshows | filter:searchText | orderBy:'times'" class="ng-scope">
+        <a class="show-title-link" href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank">
             <h3 class="show-title ng-binding">{{show.name}}</h3>
         </a>
-        <a href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank"><strong>Details</strong></a> •
-        <a href="{{show.podcast_url}}" target="_blank"><strong>Podcast</strong></a> • Show starts at <strong class="ng-binding">{{show.times}}</strong>
+        <p><a href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank">Tickets</a> • <a href="{{show.podcast_url}}" target="_blank">Podcast</a></p>
+        <p>Show starts at <strong class="ng-binding">{{show.times}}</strong></p>
     </li>
 </ul>
