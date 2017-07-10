@@ -10,6 +10,62 @@
 angular.module('comcompodOnTheFringeApp')
     .controller('MainCtrl', function() {
         this.newshows = [{
+                "name": "Barry Cryer and Ronnie Golden: Just the Two at Six",
+                "group_name": "Gilded Balloon and Steve Ullathorne present...",
+                "times": "18:00",
+                "event_url": "whats-on/barry-cryer-and-ronnie-golden-just-the-two-at-six",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/211-barry-cryer",
+                "podcast_title": "211 - Barry Cryer"
+            },
+            {
+                "name": "Pippa Evans: Joy Provision!",
+                "group_name": "Chambers Touring Ltd",
+                "times": "14:40",
+                "event_url": "whats-on/pippa-evans-joy-provision",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/210-pippa-evans",
+                "podcast_title": "210 - Pippa Evans"
+            },
+            {
+                "name": "Ed Gamble: Mammoth",
+                "group_name": "Avalon Promotions Ltd",
+                "times": "19:15",
+                "event_url": "whats-on/ed-gamble-mammoth",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/209-ed-gamble-live-at-stonefree-festival",
+                "podcast_title": "209 - Ed Gamble (Live At Stonefree Festival)"
+            },
+            {
+                "name": "Tom Ballard: Problematic",
+                "group_name": "Fight in the Dog, Token Events & Dawn Sedgwick Mgt",
+                "times": "20:30",
+                "event_url": "whats-on/tom-ballard-problematic",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/207-tom-ballard",
+                "podcast_title": "207 - Tom Ballard"
+            },
+            {
+                "name": "Lost Voice Guy: Inspiration Porn ",
+                "group_name": "Lost Voice Guy / The Stand Comedy Club ",
+                "times": "13:15",
+                "event_url": "whats-on/lost-voice-guy-inspiration-porn",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/206-lost-voice-guy-aka-lee-ridley",
+                "podcast_title": "206 - Lost Voice Guy (AKA Lee Ridley)"
+            },
+            {
+                "name": "Rhys Nicholson: I'm Fine",
+                "group_name": "Underbelly and Century Entertainment",
+                "times": "21:15",
+                "event_url": "whats-on/rhys-nicholson-i-m-fine",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/205-rhys-nicholson",
+                "podcast_title": "205 - Rhys Nicholson"
+            },
+            {
+                "name": "Aunty Donna: Big Boys",
+                "group_name": "Century Entertainment",
+                "times": "22:30",
+                "event_url": "whats-on/aunty-donna-big-boys",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/203-aunty-donna",
+                "podcast_title": "203 - Aunty Donna"
+            },
+            {
                 "name": "Hannah Gadsby – Nanette",
                 "group_name": "Hannah Gadsby",
                 "times": "17:30",
@@ -50,6 +106,38 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "193 - Angela Barnes"
             },
             {
+                "name": "Fern Brady: Suffer, Fools!",
+                "group_name": "Fern Brady / The Stand Comedy Club ",
+                "times": "12:05",
+                "event_url": "whats-on/fern-brady-suffer-fools",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/190-fern-brady",
+                "podcast_title": "190 - Fern Brady"
+            },
+            {
+                "name": "Carmen Lynch: Lynched",
+                "group_name": "Carmen Lynch / Free Festival",
+                "times": "16:00",
+                "event_url": "whats-on/carmen-lynch-lynched",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/187-carmen-lynch",
+                "podcast_title": "187 - Carmen Lynch"
+            },
+            {
+                "name": "Barry Crimmins: Atlas's Knees",
+                "group_name": "Barry Crimmins / Lakin McCarthy / The Stand Comedy Club",
+                "times": "21:40",
+                "event_url": "whats-on/barry-crimmins-atlas-s-knees",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/184-barry-crimmins",
+                "podcast_title": "184 - Barry Crimmins"
+            },
+            {
+                "name": "Paul Currie: Cats in My Mouth",
+                "group_name": "Paul Currie / Heroes / PWYW",
+                "times": "20:30",
+                "event_url": "whats-on/paul-currie-cats-in-my-mouth",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/183-paul-currie",
+                "podcast_title": "183 - Paul Currie"
+            },
+            {
                 "name": "John Robins: The Darkness of Robins",
                 "group_name": "Phil McIntyre Entertainments",
                 "times": "18:40",
@@ -74,6 +162,22 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP 171 - Shappi Khorsandi"
             },
             {
+                "name": "Joe Lycett and Friends",
+                "group_name": "Chambers Touring / Salt ‘n’ Sauce Promotions",
+                "times": "19:20",
+                "event_url": "whats-on/joe-lycett-and-friends",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-168",
+                "podcast_title": "168 - Joe Lycett (Live at Machynlleth Comedy Festival)"
+            },
+            {
+                "name": "Seymour Mace's Magical Shitcakes from Heaven",
+                "group_name": "Seymour Mace / The Stand Comedy Club ",
+                "times": "13:30",
+                "event_url": "whats-on/seymour-mace-s-magical-shitcakes-from-heaven",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/167-seymour-mace",
+                "podcast_title": "167 - Seymour Mace"
+            },
+            {
                 "name": "Abigoliah Schamaun: Namaste, Bitches",
                 "group_name": "Live Nation",
                 "times": "19:40",
@@ -88,6 +192,14 @@ angular.module('comcompodOnTheFringeApp')
                 "event_url": "whats-on/gein-s-family-giftshop-volume-3",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp160-geins-family-giftshop",
                 "podcast_title": "CCP160 - Gein's Family Giftshop"
+            },
+            {
+                "name": "Mark Steel: Every Little Thing's Gonna Be Alright",
+                "group_name": "Off The Kerb Productions",
+                "times": "21:35",
+                "event_url": "whats-on/mark-steel-every-little-thing-s-gonna-be-alright",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp154-mark-steel-live-at-the-edinburgh-fringe",
+                "podcast_title": "CCP154 - Mark Steel (Live at the Edinburgh Fringe)"
             },
             {
                 "name": "Daniel Sloss: NOW",
@@ -106,10 +218,10 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP147 - Jason Byrne (Live at the Edinburgh Fringe)"
             },
             {
-                "name": "Mae Martin: Dope",
-                "group_name": "Show And Tell / Free Festival",
-                "times": "20:00",
-                "event_url": "whats-on/mae-martin-dope",
+                "name": "Mae Martin and Nick Coyle: Show Party",
+                "group_name": "Mae Martin, Nick Coyle, Special Guests",
+                "times": "22:30",
+                "event_url": "whats-on/mae-martin-and-nick-coyle-show-party",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp140-mae-martin-live-at-the-edinburgh-fringe",
                 "podcast_title": "CCP140 - Mae Martin (Live at the Edinburgh Fringe)"
             },
@@ -138,6 +250,14 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP130 - George Egg"
             },
             {
+                "name": "Gavin Webster: It's About Time We Had More Women in There",
+                "group_name": "Gavin Webster / The Stand Comedy Club ",
+                "times": "19:35",
+                "event_url": "whats-on/gavin-webster-it-s-about-time-we-had-more-women-in-there",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp127-gavin-webster-live",
+                "podcast_title": "CCP127 - Gavin Webster (Live)"
+            },
+            {
                 "name": "Nazeem Hussain – Hussain In The Membrane",
                 "group_name": "Nazeem Hussain",
                 "times": "20:00",
@@ -146,18 +266,26 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP126 - Nazeem Hussain"
             },
             {
-                "name": "Mark Watson: I'm Not Here",
-                "group_name": "Impatient Productions Limited",
-                "times": "23:20",
-                "event_url": "whats-on/mark-watson-i-m-not-here",
+                "name": "Mitch Benn: I'm Still Here",
+                "group_name": "Mitch Benn / The Stand Comedy Club ",
+                "times": "14:50",
+                "event_url": "whats-on/mitch-benn-i-m-still-here",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp121-mitch-benn-live",
+                "podcast_title": "CCP121 - Mitch Benn (Live)"
+            },
+            {
+                "name": "Mark Watson: This Is Not A Show Yet",
+                "group_name": "Impatient Productions / The Stand Comedy Club ",
+                "times": "13:35",
+                "event_url": "whats-on/mark-watson-this-is-not-a-show-yet",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp120-mark-watson-live",
                 "podcast_title": "CCP120 - Mark Watson (Live)"
             },
             {
-                "name": "Nina Conti: In Your Face",
-                "group_name": "PBJ Management",
-                "times": "19:15",
-                "event_url": "whats-on/nina-conti-in-your-face",
+                "name": "Nina Conti: In Therapy",
+                "group_name": "PBJ Managment",
+                "times": "15:30",
+                "event_url": "whats-on/nina-conti-in-therapy",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp119-nina-conti-live",
                 "podcast_title": "CCP119 - Nina Conti (Live)"
             },
@@ -170,12 +298,28 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP118 - The Midnight Beast"
             },
             {
+                "name": "Tim Key: Work in Progress",
+                "group_name": "PBJ Management",
+                "times": "23:00",
+                "event_url": "whats-on/tim-key-work-in-progress",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp113-tim-key-part-one-of-two",
+                "podcast_title": "CCP113 - Tim Key (Part One of Two)"
+            },
+            {
                 "name": "Brendon Burns and Craig Quartermaine in Race Off",
                 "group_name": "Mick Perrin Worldwide",
                 "times": "18:45",
                 "event_url": "whats-on/brendon-burns-and-craig-quartermaine-in-race-off",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp111-brendon-burns",
                 "podcast_title": "CCP111 - Brendon Burns"
+            },
+            {
+                "name": "Andrew O'Neill's Black Magick Fun Hour – Free",
+                "group_name": "Andrew O'Neill / PBH's Free Fringe",
+                "times": "17:00",
+                "event_url": "whats-on/andrew-o-neill-s-black-magick-fun-hour-free",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp109-andrew-oneill",
+                "podcast_title": "CCP109 - Andrew O'Neill"
             },
             {
                 "name": "Urzila Carlson – First Edition",
@@ -186,12 +330,44 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP107 - Urzila Carlson"
             },
             {
-                "name": "Luisa Omielan: The Interlude – Politics for Bitches/What Would Mary Magdalene Do?!",
+                "name": "Thom Tuck: An August Institution",
+                "group_name": "@turlygod",
+                "times": "15:00",
+                "event_url": "whats-on/thom-tuck-an-august-institution",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp106-thom-tuck",
+                "podcast_title": "CCP106 - Thom Tuck"
+            },
+            {
+                "name": "Phil Kay: Euphoric",
+                "group_name": "Heroes of Fringe / PWYW",
+                "times": "21:20",
+                "event_url": "whats-on/phil-kay-euphoric",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp100-phil-kay-live",
+                "podcast_title": "CCP100 - Phil Kay (Live)"
+            },
+            {
+                "name": "Luisa Omielan: The Interlude – Politics for Bitches/What Would Mary Magdalene Do?! - CANCELLED",
                 "group_name": "CatFace Talent",
                 "times": "16:30",
-                "event_url": "whats-on/luisa-omielan-the-interlude-politics-for-bitches-what-would-mary-magdalene-do",
+                "event_url": "whats-on/luisa-omielan-the-interlude-politics-for-bitches-what-would-mary-magdalene-do-cancelled",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp99-luisa-omielan",
                 "podcast_title": "CCP99 - Luisa Omielan"
+            },
+            {
+                "name": "Eleanor Tiernan – People Pleaser",
+                "group_name": "Eleanor Tiernan",
+                "times": "15:10",
+                "event_url": "whats-on/eleanor-tiernan-people-pleaser",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-93-eleanor-tiernan",
+                "podcast_title": "CCP93 Eleanor Tiernan"
+            },
+            {
+                "name": "Trygve vs a Baby",
+                "group_name": "Trygve Wakenshaw with Don't Be Lonely and Aurora Nova",
+                "times": "15:00",
+                "event_url": "whats-on/trygve-vs-a-baby",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-95-trygve-wakenshaw",
+                "podcast_title": "CCP95 - Trygve Wakenshaw"
             },
             {
                 "name": "Tom Stade: I Swear",
@@ -210,6 +386,22 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP EP 91 - Steen Raskopoulos"
             },
             {
+                "name": "Phill Jupitus is Porky the Poet in Survivalve",
+                "group_name": "Phill Jupitus / PBH's Free Fringe",
+                "times": "12:30",
+                "event_url": "whats-on/phill-jupitus-is-porky-the-poet-in-survivalve",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-89-phill-jupitus-live",
+                "podcast_title": "CCP Ep 89 - Phill Jupitus (Live)"
+            },
+            {
+                "name": "Sam Simmons A-K",
+                "group_name": "Avalon Promotions Ltd",
+                "times": "21:40",
+                "event_url": "whats-on/sam-simmons-a-k",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-88-sam-simmons",
+                "podcast_title": "CCP Ep 88 - Sam Simmons"
+            },
+            {
                 "name": "John Hastings: Audacity",
                 "group_name": "Mick Perrin Worldwide",
                 "times": "21:15",
@@ -218,12 +410,68 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP Ep 87 - John Hastings"
             },
             {
+                "name": "Nick Doody: Interesting Times",
+                "group_name": "Nick Doody / PBH's Free Fringe",
+                "times": "19:30",
+                "event_url": "whats-on/nick-doody-interesting-times",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-84-nick-doody",
+                "podcast_title": "CCP Ep 84 - Nick Doody"
+            },
+            {
+                "name": "Andy Zaltzman: Satirist for Hire (World of 2017 Special Edition)",
+                "group_name": "Andy Zaltzman / The Stand Comedy Club",
+                "times": "15:00",
+                "event_url": "whats-on/andy-zaltzman-satirist-for-hire-world-of-2017-special-edition",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-82-andy-zaltzman",
+                "podcast_title": "CCP Ep 82 - Andy Zaltzman"
+            },
+            {
+                "name": "Adrienne Truscott's a One-Trick Pony (Or Andy Kaufmann is a Feminist Performance Artist and I'm a Comedian)",
+                "group_name": "Adrienne Truscott / Heroes of Fringe",
+                "times": "14:15",
+                "event_url": "whats-on/adrienne-truscott-s-a-one-trick-pony-or-andy-kaufmann-is-a-feminist-performance-artist-and-i-m-a-comedian",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-81-adrienne-truscott",
+                "podcast_title": "CCP Ep 81 - Adrienne Truscott"
+            },
+            {
+                "name": "Carey Marx: The Afterwife",
+                "group_name": "Carey Marx / PBH's Free Fringe",
+                "times": "18:15",
+                "event_url": "whats-on/carey-marx-the-afterwife",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-75-carey-marx-live-at",
+                "podcast_title": "CCP Ep 75 - Carey Marx (Live at The New Zealand International Comedy Festival)"
+            },
+            {
+                "name": "David O'Doherty: Big Time",
+                "group_name": "Lisa Richards",
+                "times": "12:00",
+                "event_url": "whats-on/david-o-doherty-big-time-1",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-72-david-odoherty-live",
+                "podcast_title": "CCP Ep 72 - David O'Doherty (Live)"
+            },
+            {
+                "name": "Tim Vine: Sunset Milk Idiot",
+                "group_name": "Bound & Gagged Comedy",
+                "times": "16:00",
+                "event_url": "whats-on/tim-vine-sunset-milk-idiot",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-70-tim-vine-live",
+                "podcast_title": "CCP Ep 70 - Tim Vine (Live)"
+            },
+            {
                 "name": "Ed Byrne: Spoiler Alert",
                 "group_name": "Vivienne Smith Management",
                 "times": "19:30",
                 "event_url": "whats-on/ed-byrne-spoiler-alert",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-69-ed-byrne-live",
                 "podcast_title": "CCP Ep 69 - Ed Byrne (Live)"
+            },
+            {
+                "name": "Sean Hughes's Blank Book",
+                "group_name": "Gilded Balloon and Sean Hughes Present...",
+                "times": "16:00",
+                "event_url": "whats-on/sean-hughes-s-blank-book",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-68-sean-hughes-live",
+                "podcast_title": "CCP Ep 68 - Sean Hughes (Live)"
             },
             {
                 "name": "Gary Delaney: There's Something About Gary",
@@ -240,6 +488,14 @@ angular.module('comcompodOnTheFringeApp')
                 "event_url": "whats-on/nick-helm-masterworks-in-progress-17",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-65-nick-helm-live-at",
                 "podcast_title": "CCP Ep 65 - Nick Helm (Live at Dave's Leicester Comedy Festival)"
+            },
+            {
+                "name": "Tony Law: Absurdity for the Common People",
+                "group_name": "Tony Law / The Stand Comedy Club",
+                "times": "12:00",
+                "event_url": "whats-on/tony-law-absurdity-for-the-common-people",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-64-tony-law-live",
+                "podcast_title": "CCP Ep 64 - Tony Law (Live)"
             },
             {
                 "name": "Andrew Maxwell: Showtime",
@@ -266,12 +522,44 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP Ep 53 - Al Murray (Live)"
             },
             {
+                "name": "Simon Morley: Naked Ambition",
+                "group_name": "Directed by Phil Nichol",
+                "times": "15:40",
+                "event_url": "whats-on/simon-morley-naked-ambition",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-51-phil-nichol-live",
+                "podcast_title": "CCP Ep 51 - Phil Nichol (Live)"
+            },
+            {
+                "name": "Brendon Burns and Craig Quartermaine in Race Off",
+                "group_name": "Mick Perrin Worldwide",
+                "times": "18:45",
+                "event_url": "whats-on/brendon-burns-and-craig-quartermaine-in-race-off",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-47-brendon-burns-live",
+                "podcast_title": "CCP Ep 47 - Brendon Burns (Live)"
+            },
+            {
                 "name": "Richard Herring: Oh Frig, I'm 50!",
                 "group_name": "Avalon Promotions Ltd",
                 "times": "19:30",
                 "event_url": "whats-on/richard-herring-oh-frig-i-m-50",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-46-richard-herring",
                 "podcast_title": "CCP Ep 46 Richard Herring"
+            },
+            {
+                "name": "Organ Freeman",
+                "group_name": "Jarlath Regan",
+                "times": "19:40",
+                "event_url": "whats-on/organ-freeman",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-45-jarlath-regan",
+                "podcast_title": "CCP Ep 45 - Jarlath Regan"
+            },
+            {
+                "name": "Milo McCabe: The Talented Mr Hawke",
+                "group_name": "IMWP",
+                "times": "19:00",
+                "event_url": "whats-on/milo-mccabe-the-talented-mr-hawke",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-44-milo-mccabe",
+                "podcast_title": "CCP Ep 44 - Milo McCabe"
             },
             {
                 "name": "Tom Binns is Ian D Montfort: Ian Talk Three",
@@ -290,22 +578,28 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP Ep 38 - Tom Allen"
             },
             {
+                "name": "David Quirk: Cowboy Mouth",
+                "group_name": "David Quirk",
+                "times": "20:45",
+                "event_url": "whats-on/david-quirk-cowboy-mouth",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-36-david-quirk",
+                "podcast_title": "CCP Ep 36 - David Quirk"
+            },
+            {
+                "name": "Carl Donnelly: The Nutter on the Bus",
+                "group_name": "Carl Donnelly / Heroes of Fringe",
+                "times": "19:30",
+                "event_url": "whats-on/carl-donnelly-the-nutter-on-the-bus",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-32-carl-donnelly",
+                "podcast_title": "CCP Ep 32 - Carl Donnelly"
+            },
+            {
                 "name": "James Acaster: The Trelogy",
                 "group_name": "Phil McIntyre Entertainments",
                 "times": "21:00",
                 "event_url": "whats-on/james-acaster-the-trelogy",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-28-james-acaster-live",
                 "podcast_title": "CCP Ep 28 - James Acaster (Live Special)"
-            },
-            {
-                "name": "Abandoman's Rob Broderick – The Musical in My Mind",
-                "group_name": "Assembly Festival in association with Dawn Sedgwick Management",
-                "times": "18:00",
-                "event_url": "whats-on/abandoman-s-rob-broderick-the-musical-in-my-mind",
-                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-22-abandoman-live",
-                "podcast_title": "CCP Ep 22 - Abandoman (Live)"
             }
-
-        ];
-
+        ]
     });

@@ -7,7 +7,7 @@
         <a class="show-title-link" href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank">
             <h3 class="show-title ng-binding">{{show.name}}</h3>
         </a>
-        <p><a href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank">Tickets</a> • <a href="{{show.podcast_url}}" target="_blank">Podcast</a></p>
-        <p>Show starts at <strong class="ng-binding">{{show.times}}</strong></p>
+        <p><a href="{{show.podcast_url}}" target="_blank">{{show.podcast_title}}</a></p>
+        <p><a href="https://tickets.edfringe.com/{{show.event_url}}" target="_blank">Tickets</a> • Starts at <strong class="ng-binding">{{show.times}}</strong></p>
     </li>
 </ul>
