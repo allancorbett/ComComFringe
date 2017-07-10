@@ -7,6 +7,16 @@
  * # MainCtrl
  * Controller of the comcompodOnTheFringeApp
  */
+
+// Add these manually
+ // {
+ //     "name": "The Boy With Tape On His Face: Tape Face",
+ //     "group_name": "Chambers Touring Ltd",
+ //     "times": "21:40",
+ //     "event_url": "whats-on/tape-face",
+ //     "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-18-the-boy-with-tape-on",
+ //     "podcast_title": "CCP Ep 18 - The Boy With Tape On His Face (Live)"
+ // },
 angular.module('comcompodOnTheFringeApp')
     .controller('MainCtrl', function() {
         this.newshows = [{
@@ -16,6 +26,14 @@ angular.module('comcompodOnTheFringeApp')
                 "event_url": "whats-on/barry-cryer-and-ronnie-golden-just-the-two-at-six",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/211-barry-cryer",
                 "podcast_title": "211 - Barry Cryer"
+            },
+            {
+                "name": "The Boy With Tape On His Face: Tape Face",
+                "group_name": "Chambers Touring Ltd",
+                "times": "21:40",
+                "event_url": "whats-on/tape-face",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-18-the-boy-with-tape-on",
+                "podcast_title": "CCP Ep 18 - The Boy With Tape On His Face (Live)"
             },
             {
                 "name": "Pippa Evans: Joy Provision!",
