@@ -9,31 +9,79 @@
  */
 
 // Add these manually
- // {
- //     "name": "The Boy With Tape On His Face: Tape Face",
- //     "group_name": "Chambers Touring Ltd",
- //     "times": "21:40",
- //     "event_url": "whats-on/tape-face",
- //     "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-18-the-boy-with-tape-on",
- //     "podcast_title": "CCP Ep 18 - The Boy With Tape On His Face (Live)"
- // },
+// {
+//     "name": "The Boy With Tape On His Face: Tape Face",
+//     "group_name": "Chambers Touring Ltd",
+//     "times": "21:40",
+//     "event_url": "whats-on/tape-face",
+//     "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-18-the-boy-with-tape-on",
+//     "podcast_title": "CCP Ep 18 - The Boy With Tape On His Face (Live)"
+// },
+// {
+//     "name": "Tiff Stevenson: Bombshell",
+//     "group_name": "Tiff Stevenson",
+//     "times": "17:30",
+//     "event_url": "whats-on/tiff-stevenson-bombshell",
+//     "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-177-tiff-stevensonlive-at-larmer-tree-festival",
+//     "podcast_title": "CCP 177 - Tiff Stevenson(Live At Larmer Tree Festival)"
+// },
+// {
+//     "name": "Stuart Goldsmith: Like I Mean It",
+//     "group_name": "Stuart Goldsmith",
+//     "times": "15:45",
+//     "event_url": "whats-on/stuart-goldsmith-like-i-mean-it",
+//     "podcast_url": "https://soundcloud.com/stu-goldsmith",
+//     "podcast_title": "The Comedian's Comedian wit Stuart Goldsmith"
+// },
 angular.module('comcompodOnTheFringeApp')
     .controller('MainCtrl', function() {
         this.newshows = [{
-                "name": "Barry Cryer and Ronnie Golden: Just the Two at Six",
-                "group_name": "Gilded Balloon and Steve Ullathorne present...",
-                "times": "18:00",
-                "event_url": "whats-on/barry-cryer-and-ronnie-golden-just-the-two-at-six",
-                "podcast_url": "https://soundcloud.com/stu-goldsmith/211-barry-cryer",
-                "podcast_title": "211 - Barry Cryer"
-            },
-            {
                 "name": "The Boy With Tape On His Face: Tape Face",
                 "group_name": "Chambers Touring Ltd",
                 "times": "21:40",
                 "event_url": "whats-on/tape-face",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-18-the-boy-with-tape-on",
                 "podcast_title": "CCP Ep 18 - The Boy With Tape On His Face (Live)"
+            },
+            {
+                "name": "Tiff Stevenson: Bombshell",
+                "group_name": "Tiff Stevenson",
+                "times": "17:30",
+                "event_url": "whats-on/tiff-stevenson-bombshell",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-177-tiff-stevensonlive-at-larmer-tree-festival",
+                "podcast_title": "CCP 177 - Tiff Stevenson(Live At Larmer Tree Festival)"
+            },
+            {
+                "name": "Stuart Goldsmith: Like I Mean It",
+                "group_name": "Stuart Goldsmith",
+                "times": "15:45",
+                "event_url": "whats-on/stuart-goldsmith-like-i-mean-it",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith",
+                "podcast_title": "The Comedian's Comedian wit Stuart Goldsmith"
+            },
+            {
+                "name": "Nick Cody: On Fire",
+                "group_name": "MZA in association with Century Entertainment",
+                "times": "20:20",
+                "event_url": "whats-on/nick-cody-on-fire",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/214-nick-cody",
+                "podcast_title": "214 - Nick Cody"
+            },
+            {
+                "name": "Simon Munnery: Renegade Plumber",
+                "group_name": "Show And Tell / Salt 'n' Sauce Promotions",
+                "times": "15:20",
+                "event_url": "whats-on/simon-munnery-renegade-plumber",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/213-simon-munnery",
+                "podcast_title": "213 - Simon Munnery"
+            },
+            {
+                "name": "Barry Cryer and Ronnie Golden: Just the Two at Six",
+                "group_name": "Gilded Balloon and Steve Ullathorne present...",
+                "times": "18:00",
+                "event_url": "whats-on/barry-cryer-and-ronnie-golden-just-the-two-at-six",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/211-barry-cryer",
+                "podcast_title": "211 - Barry Cryer"
             },
             {
                 "name": "Pippa Evans: Joy Provision!",
@@ -46,7 +94,7 @@ angular.module('comcompodOnTheFringeApp')
             {
                 "name": "Ed Gamble: Mammoth",
                 "group_name": "Avalon Promotions Ltd",
-                "times": "19:15",
+                "times": "19:15, 23:00",
                 "event_url": "whats-on/ed-gamble-mammoth",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/209-ed-gamble-live-at-stonefree-festival",
                 "podcast_title": "209 - Ed Gamble (Live At Stonefree Festival)"
@@ -86,8 +134,8 @@ angular.module('comcompodOnTheFringeApp')
             {
                 "name": "Hannah Gadsby – Nanette",
                 "group_name": "Hannah Gadsby",
-                "times": "17:30",
-                "event_url": "whats-on/hannah-gadsby-nanette",
+                "times": "15:50",
+                "event_url": "whats-on/hannah-gadsby-nanette-1",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/202-hannah-gadsby-live-at-melbourne-comedy-festival",
                 "podcast_title": "202 - Hannah Gadsby (Live At Melbourne Comedy Festival)"
             },
@@ -102,7 +150,7 @@ angular.module('comcompodOnTheFringeApp')
             {
                 "name": "Phil Wang: Kinabalu",
                 "group_name": "Avalon Promotions Ltd",
-                "times": "19:00",
+                "times": "19:00, 22:45",
                 "event_url": "whats-on/phil-wang-kinabalu",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/197-phil-wang",
                 "podcast_title": "197 - Phil Wang"
@@ -174,8 +222,8 @@ angular.module('comcompodOnTheFringeApp')
             {
                 "name": "Shappi Khorsandi: Mistress and Misfit",
                 "group_name": "Off The Kerb Productions",
-                "times": "18:40",
-                "event_url": "whats-on/shappi-khorsandi-mistress-and-misfit",
+                "times": "21:40",
+                "event_url": "whats-on/shappi-khorsandi-mistress-and-misfit-1",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-171-shappi-korsandi",
                 "podcast_title": "CCP 171 - Shappi Khorsandi"
             },
@@ -250,6 +298,14 @@ angular.module('comcompodOnTheFringeApp')
                 "event_url": "whats-on/tommy-tiernan-under-the-influence",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp139-tommy-tiernan-live-at-the-edinburgh-fringe",
                 "podcast_title": "CCP139 - Tommy Tiernan (Live at the Edinburgh Fringe)"
+            },
+            {
+                "name": "Justin Moorhouse: People and Feelings",
+                "group_name": "CKP",
+                "times": "18:00",
+                "event_url": "whats-on/justin-moorhouse-people-and-feelings",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp136-justin-moorhouse",
+                "podcast_title": "CCP136 - Justin Moorhouse"
             },
             {
                 "name": "Charlie Baker: The Hit Polisher",
@@ -516,6 +572,14 @@ angular.module('comcompodOnTheFringeApp')
                 "podcast_title": "CCP Ep 64 - Tony Law (Live)"
             },
             {
+                "name": "Jason Manford: Muddle Class Work in Progress",
+                "group_name": "Phil McIntyre Entertainments by arrangement with Lisa Thomas Management",
+                "times": "17:15",
+                "event_url": "whats-on/jason-manford-muddle-class-work-in-progress",
+                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-57-jason-manford-live",
+                "podcast_title": "CCP Ep 57 - Jason Manford (Live)"
+            },
+            {
                 "name": "Andrew Maxwell: Showtime",
                 "group_name": "Brett Vincent for Get Comedy",
                 "times": "21:00",
@@ -546,14 +610,6 @@ angular.module('comcompodOnTheFringeApp')
                 "event_url": "whats-on/simon-morley-naked-ambition",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-51-phil-nichol-live",
                 "podcast_title": "CCP Ep 51 - Phil Nichol (Live)"
-            },
-            {
-                "name": "Brendon Burns and Craig Quartermaine in Race Off",
-                "group_name": "Mick Perrin Worldwide",
-                "times": "18:45",
-                "event_url": "whats-on/brendon-burns-and-craig-quartermaine-in-race-off",
-                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-47-brendon-burns-live",
-                "podcast_title": "CCP Ep 47 - Brendon Burns (Live)"
             },
             {
                 "name": "Richard Herring: Oh Frig, I'm 50!",
@@ -602,22 +658,6 @@ angular.module('comcompodOnTheFringeApp')
                 "event_url": "whats-on/david-quirk-cowboy-mouth",
                 "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-36-david-quirk",
                 "podcast_title": "CCP Ep 36 - David Quirk"
-            },
-            {
-                "name": "Carl Donnelly: The Nutter on the Bus",
-                "group_name": "Carl Donnelly / Heroes of Fringe",
-                "times": "19:30",
-                "event_url": "whats-on/carl-donnelly-the-nutter-on-the-bus",
-                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-32-carl-donnelly",
-                "podcast_title": "CCP Ep 32 - Carl Donnelly"
-            },
-            {
-                "name": "James Acaster: The Trelogy",
-                "group_name": "Phil McIntyre Entertainments",
-                "times": "21:00",
-                "event_url": "whats-on/james-acaster-the-trelogy",
-                "podcast_url": "https://soundcloud.com/stu-goldsmith/ccp-ep-28-james-acaster-live",
-                "podcast_title": "CCP Ep 28 - James Acaster (Live Special)"
             }
-        ]
+        ];
     });
