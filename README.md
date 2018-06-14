@@ -20,7 +20,7 @@ First, gather the data. This may change year-to-year; it worked for 2017:
 $ curl -s 'https://tickets.edfringe.com/solr/select?fl=name,group_name,times,event_url&q=*%3A*&wt=json&rows=3580' > fringe-data.json
 
 # Get the list of podcasts from Soundcloud
-$ curl -s 'https://api-v2.soundcloud.com/stream/users/6071615?limit=200&client_id=2t9loNQH90kzJcsFCODdigxfp325aq4z&app_version=1493303817' > ccp-data.json
+$ curl -s 'https://api-v2.soundcloud.com/stream/users/6071615?client_id=ygqBemDJqqQfdRCROgK9y7WNppl7x95D&limit=2000&app_version=1528811878' > ccp-data.json
 ```
 
 Then, search for matching shows and create a new JSON array:
